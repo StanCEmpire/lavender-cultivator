@@ -1,0 +1,5 @@
+--- a/net/minecraft/util/datafix/fixes/ChunkProtoTickListFix.java
++++ b/net/minecraft/util/datafix/fixes/ChunkProtoTickListFix.java
+@@ -180,1 +180,1 @@
+-         ImmutableMap.builder()
++         ImmutableMap.<Dynamic<?>, Dynamic<?>>builder()

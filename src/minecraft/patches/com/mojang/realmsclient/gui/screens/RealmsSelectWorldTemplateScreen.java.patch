@@ -1,0 +1,13 @@
+--- a/com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen.java
++++ b/com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen.java
+@@ -239,4 +239,0 @@
+-   // $VF: synthetic method
+-   static Font access$500(RealmsSelectWorldTemplateScreen x0) {
+-      return x0.font;
+-   }
+@@ -244,5 +240,0 @@
+-   // $VF: synthetic method
+-   static Font access$700(RealmsSelectWorldTemplateScreen x0) {
+-      return x0.font;
+-   }
+-

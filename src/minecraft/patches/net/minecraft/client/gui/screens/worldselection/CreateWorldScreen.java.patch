@@ -1,0 +1,8 @@
+--- a/net/minecraft/client/gui/screens/worldselection/CreateWorldScreen.java
++++ b/net/minecraft/client/gui/screens/worldselection/CreateWorldScreen.java
+@@ -541,1 +541,1 @@
+-                  LOGGER.warn("Failed to remove temporary file {}", path, ex);
++                  LOGGER.warn("Failed to remove temporary file {}", path, e);
+@@ -597,1 +597,1 @@
+-                  throw new UncheckedIOException(ex);
++                  throw new UncheckedIOException(e);

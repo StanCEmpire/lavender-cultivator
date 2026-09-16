@@ -1,0 +1,7 @@
+--- a/net/minecraft/world/entity/variant/PriorityProvider.java
++++ b/net/minecraft/world/entity/variant/PriorityProvider.java
+@@ -106,2 +106,2 @@
+-      public static final Comparator<PriorityProvider.UnpackedEntry<?, ?>> HIGHEST_PRIORITY_FIRST = Comparator.comparingInt(
+-            PriorityProvider.UnpackedEntry::priority
++      public static final Comparator<PriorityProvider.UnpackedEntry<?, ?>> HIGHEST_PRIORITY_FIRST = Comparator.<UnpackedEntry<?, ?>>comparingInt(
++                      UnpackedEntry::priority

@@ -1,0 +1,5 @@
+--- a/net/minecraft/client/gui/screens/inventory/BookViewScreen.java
++++ b/net/minecraft/client/gui/screens/inventory/BookViewScreen.java
+@@ -274,1 +274,1 @@
+-         return writableContent != null ? new BookViewScreen.BookAccess(writableContent.getPages(filterEnabled).map(Component::literal).toList()) : null;
++         return writableContent != null ? new BookViewScreen.BookAccess(writableContent.getPages(filterEnabled).map(mapper -> (Component)Component.literal(mapper)).toList()) : null;

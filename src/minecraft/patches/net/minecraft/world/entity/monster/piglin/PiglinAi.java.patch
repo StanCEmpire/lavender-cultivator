@@ -1,0 +1,14 @@
+--- a/net/minecraft/world/entity/monster/piglin/PiglinAi.java
++++ b/net/minecraft/world/entity/monster/piglin/PiglinAi.java
+@@ -183,1 +183,1 @@
+-            new CrossbowAttack(),
++            new CrossbowAttack<Piglin, LivingEntity>(),
+@@ -201,1 +201,1 @@
+-            new RunOne<LivingEntity>(
++            new RunOne<Piglin>(
+@@ -234,1 +234,1 @@
+-            EraseMemoryIf.<PathfinderMob>create(PiglinAi::wantsToStopFleeing, MemoryModuleType.AVOID_TARGET)
++            EraseMemoryIf.<PathfinderMob>create(pathfinderMob -> wantsToStopFleeing((Piglin)pathfinderMob), MemoryModuleType.AVOID_TARGET)
+@@ -256,1 +256,1 @@
+-            DismountOrSkipMounting.<LivingEntity>create(8, PiglinAi::wantsToStopRiding)
++            DismountOrSkipMounting.<LivingEntity>create(8, (livingEntity, entity) -> wantsToStopRiding((Piglin)entity, entity))

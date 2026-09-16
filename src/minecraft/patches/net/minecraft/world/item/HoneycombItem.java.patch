@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/item/HoneycombItem.java
++++ b/net/minecraft/world/item/HoneycombItem.java
+@@ -86,1 +86,1 @@
+-         return InteractionResult.SUCCESS;
++         return (InteractionResult)InteractionResult.SUCCESS;

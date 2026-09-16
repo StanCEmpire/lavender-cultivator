@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/level/block/BaseEntityBlock.java
++++ b/net/minecraft/world/level/block/BaseEntityBlock.java
+@@ -37,1 +37,1 @@
+-      return expected == actual ? ticker : null;
++      return expected == actual ? (BlockEntityTicker<A>)ticker : null;

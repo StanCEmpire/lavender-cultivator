@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/level/biome/Climate.java
++++ b/net/minecraft/world/level/biome/Climate.java
+@@ -268,1 +268,1 @@
+-            .map(p -> new Climate.RTree.Leaf(p.getFirst(), p.getSecond()))
++            .map(p -> new Climate.RTree.Leaf<>(p.getFirst(), p.getSecond()))

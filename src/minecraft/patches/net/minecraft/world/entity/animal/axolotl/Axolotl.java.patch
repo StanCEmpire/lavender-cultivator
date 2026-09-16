@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/axolotl/Axolotl.java
++++ b/net/minecraft/world/entity/animal/axolotl/Axolotl.java
+@@ -534,1 +534,1 @@
+-      return super.getBrain();
++      return (Brain<Axolotl>)super.getBrain();

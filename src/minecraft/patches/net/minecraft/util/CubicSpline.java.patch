@@ -1,0 +1,10 @@
+--- a/net/minecraft/util/CubicSpline.java
++++ b/net/minecraft/util/CubicSpline.java
+@@ -65,1 +65,1 @@
+-            .xmap(e -> e.map(CubicSpline.Constant::new, (Function<? super CubicSpline.Multipoint<I>, ? extends CubicSpline.Constant<I>>)(m -> m)), spline -> {
++            .xmap(e -> e.map(CubicSpline.Constant::new, m -> m), spline -> {
+@@ -67,2 +67,2 @@
+-                  case CubicSpline.Constant(float value) -> Either.left(value);
+-                  case CubicSpline.Multipoint<I> multipoint -> Either.right(multipoint);
++                  case CubicSpline.Constant(float value) -> Either.<Float, Multipoint<I>>left(value);
++                  case CubicSpline.Multipoint<I> multipoint -> Either.<Float, Multipoint<I>>right(multipoint);

@@ -1,0 +1,5 @@
+--- a/net/minecraft/client/Minecraft.java
++++ b/net/minecraft/client/Minecraft.java
+@@ -2504,1 +2504,1 @@
+-      return this.<CompletableFuture<Void>>submit(this::reloadResourcePacks).thenCompose(result -> (CompletionStage<Void>)result);
++      return this.<CompletableFuture<Void>>submit(() -> reloadResourcePacks()).thenCompose(result -> (CompletionStage<Void>)result);

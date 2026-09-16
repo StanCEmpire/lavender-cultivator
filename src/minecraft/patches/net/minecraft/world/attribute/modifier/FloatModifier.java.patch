@@ -1,0 +1,10 @@
+--- a/net/minecraft/world/attribute/modifier/FloatModifier.java
++++ b/net/minecraft/world/attribute/modifier/FloatModifier.java
+@@ -24,1 +24,1 @@
+-   FloatModifier<Float> ADD = Float::sum;
++   FloatModifier<Float> ADD = (Simple)Float::sum;
+@@ -27,2 +27,2 @@
+-   FloatModifier<Float> MINIMUM = Math::min;
+-   FloatModifier<Float> MAXIMUM = Math::max;
++   FloatModifier<Float> MINIMUM = (Simple)Math::min;
++   FloatModifier<Float> MAXIMUM = (Simple)Math::max;

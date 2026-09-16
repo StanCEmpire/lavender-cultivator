@@ -1,0 +1,4 @@
+--- a/net/minecraft/resources/RegistryLoadTask.java
++++ b/net/minecraft/resources/RegistryLoadTask.java
+@@ -5,0 +5,1 @@
++import com.mojang.logging.LogUtils;

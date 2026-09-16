@@ -1,0 +1,13 @@
+--- a/net/minecraft/world/attribute/modifier/IntegerModifier.java
++++ b/net/minecraft/world/attribute/modifier/IntegerModifier.java
+@@ -8,5 +8,5 @@
+-   IntegerModifier<Integer> ADD = Integer::sum;
+-   IntegerModifier<Integer> SUBTRACT = (a, b) -> a - b;
+-   IntegerModifier<Integer> MULTIPLY = (a, b) -> a * b;
+-   IntegerModifier<Integer> MINIMUM = Math::min;
+-   IntegerModifier<Integer> MAXIMUM = Math::max;
++   IntegerModifier<Integer> ADD = (Simple)Integer::sum;
++   IntegerModifier<Integer> SUBTRACT = (Simple)((a, b) -> a - b);
++   IntegerModifier<Integer> MULTIPLY = (Simple)((a, b) -> a * b);
++   IntegerModifier<Integer> MINIMUM = (Simple)Math::min;
++   IntegerModifier<Integer> MAXIMUM = (Simple)Math::max;

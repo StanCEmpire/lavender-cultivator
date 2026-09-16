@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/goat/GoatAi.java
++++ b/net/minecraft/world/entity/animal/goat/GoatAi.java
+@@ -76,1 +76,1 @@
+-            new AnimalPanic(2.0F),
++            new AnimalPanic<Goat>(2.0F),

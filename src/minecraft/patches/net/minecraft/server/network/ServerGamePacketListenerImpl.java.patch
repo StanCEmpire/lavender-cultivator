@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/network/ServerGamePacketListenerImpl.java
++++ b/net/minecraft/server/network/ServerGamePacketListenerImpl.java
+@@ -1011,1 +1011,1 @@
+-         List<Filterable<Component>> pages = contents.stream().map(page -> this.filterableFromOutgoing(page).map(Component::literal)).toList();
++         List<Filterable<Component>> pages = contents.stream().map(page -> this.filterableFromOutgoing(page).map(str -> (Component)Component.literal(str))).toList();

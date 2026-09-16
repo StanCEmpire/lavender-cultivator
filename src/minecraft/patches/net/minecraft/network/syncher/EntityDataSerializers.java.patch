@@ -1,0 +1,5 @@
+--- a/net/minecraft/network/syncher/EntityDataSerializers.java
++++ b/net/minecraft/network/syncher/EntityDataSerializers.java
+@@ -100,1 +100,1 @@
+-      EntityReference.streamCodec().apply(ByteBufCodecs::optional)
++      EntityReference.<LivingEntity>streamCodec().apply(ByteBufCodecs::optional)

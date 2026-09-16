@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/SpawnPlacements.java
++++ b/net/minecraft/world/entity/SpawnPlacements.java
+@@ -84,1 +84,1 @@
+-      return data == null || data.predicate.test(type, level, spawnReason, pos, random);
++      return data == null || ((SpawnPredicate<T>)data.predicate).test(type, level, spawnReason, pos, random);

@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/level/block/entity/TestInstanceBlockEntity.java
++++ b/net/minecraft/world/level/block/entity/TestInstanceBlockEntity.java
+@@ -108,1 +108,1 @@
+-      return this.test().map(key -> Component.literal(key.identifier().toString())).orElse(INVALID_TEST_NAME);
++      return this.test().map(key -> (Component)Component.literal(key.identifier().toString())).orElse(INVALID_TEST_NAME);

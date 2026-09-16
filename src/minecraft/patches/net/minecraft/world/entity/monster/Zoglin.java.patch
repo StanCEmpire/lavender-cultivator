@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/Zoglin.java
++++ b/net/minecraft/world/entity/monster/Zoglin.java
+@@ -224,1 +224,1 @@
+-      return super.getBrain();
++      return (Brain<Zoglin>)super.getBrain();

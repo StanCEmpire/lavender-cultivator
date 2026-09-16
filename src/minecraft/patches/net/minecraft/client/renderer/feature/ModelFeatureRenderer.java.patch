@@ -1,0 +1,5 @@
+--- a/net/minecraft/client/renderer/feature/ModelFeatureRenderer.java
++++ b/net/minecraft/client/renderer/feature/ModelFeatureRenderer.java
+@@ -65,1 +65,1 @@
+-         return (FeatureRendererType<ModelFeatureRenderer.Submit<S>>)ModelFeatureRenderer.TYPE;
++         return (FeatureRendererType<Submit<S>>)(FeatureRendererType<?>)ModelFeatureRenderer.TYPE;

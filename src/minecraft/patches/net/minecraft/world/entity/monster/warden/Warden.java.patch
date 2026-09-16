@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/warden/Warden.java
++++ b/net/minecraft/world/entity/monster/warden/Warden.java
+@@ -379,1 +379,1 @@
+-      return super.getBrain();
++      return (Brain<Warden>)super.getBrain();

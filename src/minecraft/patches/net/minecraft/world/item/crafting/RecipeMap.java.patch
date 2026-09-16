@@ -1,0 +1,7 @@
+--- a/net/minecraft/world/item/crafting/RecipeMap.java
++++ b/net/minecraft/world/item/crafting/RecipeMap.java
+@@ -8,0 +8,1 @@
++import java.util.List;
+@@ -37,1 +38,1 @@
+-      return (Collection<RecipeHolder<T>>)this.byType.get(type);
++       return (Collection<RecipeHolder<T>>)((Collection<?>)this.byType.get(type));

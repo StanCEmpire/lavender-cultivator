@@ -1,0 +1,8 @@
+--- a/net/minecraft/util/PlaceholderLookupProvider.java
++++ b/net/minecraft/util/PlaceholderLookupProvider.java
+@@ -101,1 +101,1 @@
+-         return this;
++         return (HolderGetter<T>)this;
+@@ -105,1 +105,1 @@
+-         return this;
++         return (HolderOwner<T>)this;

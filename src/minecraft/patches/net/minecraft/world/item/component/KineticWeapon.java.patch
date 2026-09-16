@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/item/component/KineticWeapon.java
++++ b/net/minecraft/world/item/component/KineticWeapon.java
+@@ -112,1 +112,1 @@
+-         for (EntityHitResult hitResult : ProjectileUtil.getHitEntitiesAlong(
++         for (EntityHitResult hitResult : (Collection<EntityHitResult>)ProjectileUtil.getHitEntitiesAlong(

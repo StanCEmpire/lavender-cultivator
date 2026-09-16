@@ -1,0 +1,8 @@
+--- a/net/minecraft/core/component/TypedDataComponent.java
++++ b/net/minecraft/core/component/TypedDataComponent.java
+@@ -14,1 +14,1 @@
+-         return decodeTyped(input, (DataComponentType<T>)type);
++         return decodeTyped(input, type);
+@@ -22,1 +22,1 @@
+-         encodeCap(output, (TypedDataComponent<T>)value);
++         encodeCap(output, value);

@@ -1,0 +1,8 @@
+--- a/net/minecraft/util/datafix/fixes/OptionsKeyTranslationFix.java
++++ b/net/minecraft/util/datafix/fixes/OptionsKeyTranslationFix.java
+@@ -8,0 +8,2 @@
++import com.mojang.serialization.Dynamic;
++
+@@ -20,1 +22,1 @@
+-         input -> input.update(DSL.remainderFinder(), tag -> tag.getMapValues().map(map1 -> tag.createMap(map1.entrySet().stream().map(entry -> {
++         input -> input.update(DSL.remainderFinder(), tag -> tag.getMapValues().<Dynamic<?>>map(map1 -> tag.createMap(map1.entrySet().stream().map(entry -> {

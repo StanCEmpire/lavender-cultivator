@@ -1,0 +1,8 @@
+--- a/net/minecraft/core/RegistrySetBuilder.java
++++ b/net/minecraft/core/RegistrySetBuilder.java
+@@ -419,1 +419,1 @@
+-         return (Holder.Reference<T>)this.holders.computeIfAbsent(id, k -> Holder.Reference.createStandAlone(this.owner, (ResourceKey<Object>)k));
++         return (Holder.Reference<T>)this.holders.computeIfAbsent((ResourceKey<Object>)id, k -> Holder.Reference.createStandAlone(this.owner, (ResourceKey<Object>)k));
+@@ -425,1 +425,1 @@
+-         return this;
++         return (HolderOwner<T>)this;

@@ -1,0 +1,40 @@
+--- a/net/minecraft/client/renderer/blockentity/BeaconRenderer.java
++++ b/net/minecraft/client/renderer/blockentity/BeaconRenderer.java
+@@ -107,0 +107,1 @@
++      final float finalWnz = wnz;
+@@ -108,0 +109,1 @@
++      final float finalEnx = enx;
+@@ -110,0 +112,1 @@
++      final float finalWsx = wsx;
+@@ -113,0 +116,1 @@
++      final float finalEsz = esz;
+@@ -116,0 +120,1 @@
++      final float finalVv2 = vv2;
+@@ -117,0 +122,1 @@
++      final float finalVv1 = vv1;
+@@ -120,1 +126,1 @@
+-         (pose, buffer) -> renderPart(pose, buffer, color, beamStart, beamEnd, 0.0F, wnz, enx, 0.0F, wsx, 0.0F, 0.0F, esz, 0.0F, 1.0F, vv1, vv2)
++         (pose, buffer) -> renderPart(pose, buffer, color, beamStart, beamEnd, 0.0F, finalWnz, finalEnx, 0.0F, finalWsx, 0.0F, 0.0F, finalEsz, 0.0F, 1.0F, finalVv1, finalVv2)
+@@ -124,0 +130,1 @@
++      final float finalWnx1 = wnx;
+@@ -125,0 +132,1 @@
++      final float finalWnz1 = wnz;
+@@ -126,0 +134,1 @@
++      final float finalEnx1 = enx;
+@@ -127,0 +136,1 @@
++      final float finalEnz1 = enz;
+@@ -128,0 +138,1 @@
++      final float finalWsx1 = wsx;
+@@ -129,0 +140,1 @@
++      final float finalWsz1 = wsz;
+@@ -130,0 +142,1 @@
++      final float finalEsx1 = esx;
+@@ -131,0 +144,1 @@
++      final float finalEsz1 = esz;
+@@ -134,0 +148,1 @@
++      final float finalVv21 = vv2;
+@@ -135,0 +150,1 @@
++      final float finalVv11 = vv1;
+@@ -138,1 +154,1 @@
+-         (pose, buffer) -> renderPart(pose, buffer, ARGB.color(32, color), beamStart, beamEnd, wnx, wnz, enx, enz, wsx, wsz, esx, esz, 0.0F, 1.0F, vv1, vv2)
++         (pose, buffer) -> renderPart(pose, buffer, ARGB.color(32, color), beamStart, beamEnd, finalWnx1, finalWnz1, finalEnx1, finalEnz1, finalWsx1, finalWsz1, finalEsx1, finalEsz1, 0.0F, 1.0F, finalVv11, finalVv21)

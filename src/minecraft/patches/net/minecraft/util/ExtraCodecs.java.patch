@@ -1,0 +1,5 @@
+--- a/net/minecraft/util/ExtraCodecs.java
++++ b/net/minecraft/util/ExtraCodecs.java
+@@ -284,1 +284,1 @@
+-      Codec<I> objectCodec = RecordCodecBuilder.<Pair>create(
++      Codec<I> objectCodec = RecordCodecBuilder.<Pair<P, P>>create(

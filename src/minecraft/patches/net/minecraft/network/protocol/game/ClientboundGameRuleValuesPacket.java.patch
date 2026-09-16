@@ -1,0 +1,5 @@
+--- a/net/minecraft/network/protocol/game/ClientboundGameRuleValuesPacket.java
++++ b/net/minecraft/network/protocol/game/ClientboundGameRuleValuesPacket.java
+@@ -18,1 +18,1 @@
+-      .map(ClientboundGameRuleValuesPacket::new, ClientboundGameRuleValuesPacket::values);
++      .map(map -> new ClientboundGameRuleValuesPacket(map), packet -> (HashMap<ResourceKey<GameRule<?>>, String>) packet.values).cast();

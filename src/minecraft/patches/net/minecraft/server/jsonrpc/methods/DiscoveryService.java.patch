@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/jsonrpc/methods/DiscoveryService.java
++++ b/net/minecraft/server/jsonrpc/methods/DiscoveryService.java
+@@ -43,1 +43,1 @@
+-            i -> i.group(Codec.unboundedMap(Codec.STRING, Schema.CODEC).fieldOf("schemas").forGetter(DiscoveryService.DiscoverComponents::schemas))
++            i -> i.group(Codec.unboundedMap(Codec.STRING, (Codec<Schema<?>>)Schema.CODEC).fieldOf("schemas").forGetter(DiscoveryService.DiscoverComponents::schemas))

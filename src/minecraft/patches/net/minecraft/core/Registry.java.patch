@@ -1,0 +1,5 @@
+--- a/net/minecraft/core/Registry.java
++++ b/net/minecraft/core/Registry.java
+@@ -139,1 +139,1 @@
+-      return DataFixUtils.orElse(this.get(id), List.<T>of());
++      return DataFixUtils.orElse(this.get(id), List.of());

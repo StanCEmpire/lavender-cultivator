@@ -1,0 +1,13 @@
+--- a/net/minecraft/commands/execution/tasks/BuildContexts.java
++++ b/net/minecraft/commands/execution/tasks/BuildContexts.java
+@@ -59,1 +59,2 @@
+-               if (modifier instanceof CustomModifierExecutor<T> customModifierExecutor) {
++               if (modifier instanceof CustomModifierExecutor<?>) {
++                  CustomModifierExecutor<T> customModifierExecutor = (CustomModifierExecutor<T>)modifier;
+@@ -98,1 +99,1 @@
+-            context.queueNext(new CommandQueueEntry<>(frame, FallthroughTask.instance()));
++            context.queueNext(new CommandQueueEntry<T>(frame, FallthroughTask.instance()));
+@@ -102,1 +103,2 @@
+-         if (executeContext.getCommand() instanceof CustomCommandExecutor<T> customCommandExecutor) {
++         if (executeContext.getCommand() instanceof CustomCommandExecutor<?>) {
++             CustomCommandExecutor<T> customCommandExecutor = (CustomCommandExecutor<T>)executeContext.getCommand();

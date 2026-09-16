@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/piglin/PiglinBrute.java
++++ b/net/minecraft/world/entity/monster/piglin/PiglinBrute.java
+@@ -78,1 +78,1 @@
+-      return super.getBrain();
++      return (Brain<PiglinBrute>)super.getBrain();

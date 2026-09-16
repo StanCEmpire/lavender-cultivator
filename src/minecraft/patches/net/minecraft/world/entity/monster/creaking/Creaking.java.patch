@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/creaking/Creaking.java
++++ b/net/minecraft/world/entity/monster/creaking/Creaking.java
+@@ -201,1 +201,1 @@
+-      return super.getBrain();
++      return (Brain<Creaking>)super.getBrain();

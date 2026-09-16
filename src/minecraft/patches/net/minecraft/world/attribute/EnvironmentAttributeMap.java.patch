@@ -1,0 +1,13 @@
+--- a/net/minecraft/world/attribute/EnvironmentAttributeMap.java
++++ b/net/minecraft/world/attribute/EnvironmentAttributeMap.java
+@@ -13,0 +13,2 @@
++import java.util.function.Function;
++
+@@ -20,2 +22,2 @@
+-      () -> Codec.dispatchedMap(EnvironmentAttributes.CODEC, Util.memoize(EnvironmentAttributeMap.Entry::createCodec))
+-         .xmap(EnvironmentAttributeMap::new, v -> v.entries)
++      () -> Codec.dispatchedMap(EnvironmentAttributes.CODEC, Util.memoize((Function<EnvironmentAttribute<?>,Codec<? extends Entry<?, ?>>>)EnvironmentAttributeMap.Entry::createCodec))
++         .xmap(EnvironmentAttributeMap::new, environmentAttributeMap -> environmentAttributeMap.entries)
+@@ -34,1 +36,1 @@
+-   private final Map<EnvironmentAttribute<?>, EnvironmentAttributeMap.Entry<?, ?>> entries;
++   public final Map<EnvironmentAttribute<?>, EnvironmentAttributeMap.Entry<?, ?>> entries;

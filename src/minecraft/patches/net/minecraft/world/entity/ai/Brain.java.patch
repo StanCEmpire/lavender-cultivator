@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/ai/Brain.java
++++ b/net/minecraft/world/entity/ai/Brain.java
+@@ -234,1 +234,1 @@
+-      slot.visit(memoryModuleType, visitor);
++       ((MemorySlot<U>)slot).visit(memoryModuleType, visitor);

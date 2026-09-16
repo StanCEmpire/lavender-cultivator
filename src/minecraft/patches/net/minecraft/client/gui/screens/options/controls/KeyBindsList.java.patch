@@ -1,0 +1,8 @@
+--- a/net/minecraft/client/gui/screens/options/controls/KeyBindsList.java
++++ b/net/minecraft/client/gui/screens/options/controls/KeyBindsList.java
+@@ -63,5 +63,0 @@
+-   // $VF: synthetic method
+-   static Minecraft access$400(KeyBindsList x0) {
+-      return x0.minecraft;
+-   }
+-

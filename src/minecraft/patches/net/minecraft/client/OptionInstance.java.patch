@@ -1,0 +1,5 @@
+--- a/net/minecraft/client/OptionInstance.java
++++ b/net/minecraft/client/OptionInstance.java
+@@ -240,1 +240,1 @@
+-         return instance -> CycleButton.builder(instance.toString, instance::get)
++         return instance -> CycleButton.builder(instance.toString, (Supplier<T>)(instance::get))

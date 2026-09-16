@@ -1,0 +1,5 @@
+--- a/net/minecraft/commands/synchronization/SuggestionProviders.java
++++ b/net/minecraft/commands/synchronization/SuggestionProviders.java
+@@ -40,1 +40,1 @@
+-         return new SuggestionProviders.RegisteredSuggestion(name, provider);
++         return (SuggestionProvider<S>) new SuggestionProviders.RegisteredSuggestion(name, provider);

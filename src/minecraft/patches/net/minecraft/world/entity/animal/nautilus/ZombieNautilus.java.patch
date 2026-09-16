@@ -1,0 +1,7 @@
+--- a/net/minecraft/world/entity/animal/nautilus/ZombieNautilus.java
++++ b/net/minecraft/world/entity/animal/nautilus/ZombieNautilus.java
+@@ -29,0 +29,1 @@
++import net.minecraft.world.entity.monster.zombie.Zombie;
+@@ -71,1 +72,1 @@
+-      return super.getBrain();
++      return (Brain<ZombieNautilus>)super.getBrain();

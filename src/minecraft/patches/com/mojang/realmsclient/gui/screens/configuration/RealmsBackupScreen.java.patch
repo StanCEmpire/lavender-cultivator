@@ -1,0 +1,7 @@
+--- a/com/mojang/realmsclient/gui/screens/configuration/RealmsBackupScreen.java
++++ b/com/mojang/realmsclient/gui/screens/configuration/RealmsBackupScreen.java
+@@ -162,4 +162,0 @@
+-   // $VF: synthetic method
+-   static Font access$600(RealmsBackupScreen x0) {
+-      return x0.font;
+-   }

@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/armadillo/Armadillo.java
++++ b/net/minecraft/world/entity/animal/armadillo/Armadillo.java
+@@ -137,1 +137,1 @@
+-      return super.getBrain();
++      return (Brain<Armadillo>)super.getBrain();

@@ -1,0 +1,9 @@
+--- a/net/minecraft/util/datafix/fixes/EntitySpawnerItemVariantComponentFix.java
++++ b/net/minecraft/util/datafix/fixes/EntitySpawnerItemVariantComponentFix.java
+@@ -35,3 +35,3 @@
+-               case "minecraft:salmon_bucket" -> input.updateTyped(componentsFinder, EntitySpawnerItemVariantComponentFix::fixSalmonBucket);
+-               case "minecraft:axolotl_bucket" -> input.updateTyped(componentsFinder, EntitySpawnerItemVariantComponentFix::fixAxolotlBucket);
+-               case "minecraft:tropical_fish_bucket" -> input.updateTyped(componentsFinder, EntitySpawnerItemVariantComponentFix::fixTropicalFishBucket);
++               case "minecraft:salmon_bucket" -> input.updateTyped(componentsFinder, (Fixer)EntitySpawnerItemVariantComponentFix::fixSalmonBucket);
++               case "minecraft:axolotl_bucket" -> input.updateTyped(componentsFinder, (Fixer)EntitySpawnerItemVariantComponentFix::fixAxolotlBucket);
++               case "minecraft:tropical_fish_bucket" -> input.updateTyped(componentsFinder, (Fixer)EntitySpawnerItemVariantComponentFix::fixTropicalFishBucket);

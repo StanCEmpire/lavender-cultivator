@@ -1,0 +1,18 @@
+--- a/com/mojang/realmsclient/RealmsMainScreen.java
++++ b/com/mojang/realmsclient/RealmsMainScreen.java
+@@ -697,15 +697,0 @@
+-   // $VF: synthetic method
+-   static Font access$1600(RealmsMainScreen x0) {
+-      return x0.font;
+-   }
+-
+-   // $VF: synthetic method
+-   static Font access$1800(RealmsMainScreen x0) {
+-      return x0.font;
+-   }
+-
+-   // $VF: synthetic method
+-   static Font access$2500(RealmsMainScreen x0) {
+-      return x0.font;
+-   }
+-

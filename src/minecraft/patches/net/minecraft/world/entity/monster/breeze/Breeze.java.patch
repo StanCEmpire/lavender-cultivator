@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/breeze/Breeze.java
++++ b/net/minecraft/world/entity/monster/breeze/Breeze.java
+@@ -84,1 +84,1 @@
+-      return super.getBrain();
++      return (Brain<Breeze>)super.getBrain();

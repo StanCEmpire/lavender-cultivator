@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/frog/Frog.java
++++ b/net/minecraft/world/entity/animal/frog/Frog.java
+@@ -102,1 +102,1 @@
+-      return super.getBrain();
++      return (Brain<Frog>)super.getBrain();

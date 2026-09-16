@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/allay/Allay.java
++++ b/net/minecraft/world/entity/animal/allay/Allay.java
+@@ -122,1 +122,1 @@
+-      return super.getBrain();
++      return (Brain<Allay>)super.getBrain();

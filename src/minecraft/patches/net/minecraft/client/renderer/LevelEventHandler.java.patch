@@ -1,0 +1,19 @@
+--- a/net/minecraft/client/renderer/LevelEventHandler.java
++++ b/net/minecraft/client/renderer/LevelEventHandler.java
+@@ -336,1 +336,1 @@
+-            ItemParticleOption breakParticle = new ItemParticleOption(ParticleTypes.ITEM, Items.ENDER_EYE);
++            ItemParticleOption breakParticle1 = new ItemParticleOption(ParticleTypes.ITEM, Items.ENDER_EYE);
+@@ -339,1 +339,1 @@
+-               this.level.addParticle(breakParticle, x, y, z, random.nextGaussian() * 0.15, random.nextDouble() * 0.2, random.nextGaussian() * 0.15);
++               this.level.addParticle(breakParticle1, x, y, z, random.nextGaussian() * 0.15, random.nextDouble() * 0.2, random.nextGaussian() * 0.15);
+@@ -355,5 +355,5 @@
+-               double x = pos.getX() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
+-               double y = pos.getY() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
+-               double z = pos.getZ() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
+-               this.level.addParticle(ParticleTypes.SMOKE, x, y, z, 0.0, 0.0, 0.0);
+-               this.level.addParticle(ParticleTypes.FLAME, x, y, z, 0.0, 0.0, 0.0);
++               double x1 = pos.getX() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
++               double y1 = pos.getY() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
++               double z1 = pos.getZ() + 0.5 + (random.nextDouble() - 0.5) * 2.0;
++               this.level.addParticle(ParticleTypes.SMOKE, x1, y1, z1, 0.0, 0.0, 0.0);
++               this.level.addParticle(ParticleTypes.FLAME, x1, y1, z1, 0.0, 0.0, 0.0);

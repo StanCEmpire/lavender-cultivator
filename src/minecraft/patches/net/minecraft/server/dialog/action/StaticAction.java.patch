@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/dialog/action/StaticAction.java
++++ b/net/minecraft/server/dialog/action/StaticAction.java
+@@ -17,1 +17,1 @@
+-            MapCodec<ClickEvent> mapCodec = action.valueCodec();
++            MapCodec<ClickEvent> mapCodec = (MapCodec<ClickEvent>) action.valueCodec();

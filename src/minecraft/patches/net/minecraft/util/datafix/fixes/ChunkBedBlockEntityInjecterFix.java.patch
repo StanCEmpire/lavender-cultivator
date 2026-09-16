@@ -1,0 +1,13 @@
+--- a/net/minecraft/util/datafix/fixes/ChunkBedBlockEntityInjecterFix.java
++++ b/net/minecraft/util/datafix/fixes/ChunkBedBlockEntityInjecterFix.java
+@@ -14,0 +14,1 @@
++import com.mojang.datafixers.types.templates.TaggedChoice;
+@@ -42,4 +43,4 @@
+-            "InjectBedBlockEntityType",
+-            this.getInputSchema().findChoiceType(References.BLOCK_ENTITY),
+-            this.getOutputSchema().findChoiceType(References.BLOCK_ENTITY),
+-            ops -> v -> v
++                 "InjectBedBlockEntityType",
++                 (Type<TaggedChoice.TaggedChoiceType<?>>)(Type<?>)this.getInputSchema().findChoiceType(References.BLOCK_ENTITY),
++                 (Type<TaggedChoice.TaggedChoiceType<?>>)(Type<?>)this.getOutputSchema().findChoiceType(References.BLOCK_ENTITY),
++                 ops -> v -> v

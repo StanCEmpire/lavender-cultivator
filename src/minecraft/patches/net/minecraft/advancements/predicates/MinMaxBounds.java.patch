@@ -1,0 +1,5 @@
+--- a/net/minecraft/advancements/predicates/MinMaxBounds.java
++++ b/net/minecraft/advancements/predicates/MinMaxBounds.java
+@@ -79,1 +79,1 @@
+-         return new MinMaxBounds.Bounds<>(Optional.empty(), Optional.empty());
++         return new MinMaxBounds.Bounds<T>(Optional.empty(), Optional.empty());

@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/monster/hoglin/HoglinAi.java
++++ b/net/minecraft/world/entity/monster/hoglin/HoglinAi.java
+@@ -108,1 +108,1 @@
+-            EraseMemoryIf.<PathfinderMob>create(HoglinAi::wantsToStopFleeing, MemoryModuleType.AVOID_TARGET)
++            EraseMemoryIf.<PathfinderMob>create(pathfinderMob -> wantsToStopFleeing((Hoglin)pathfinderMob), MemoryModuleType.AVOID_TARGET)

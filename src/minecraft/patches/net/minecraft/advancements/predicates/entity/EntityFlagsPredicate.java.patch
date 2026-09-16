@@ -1,0 +1,5 @@
+--- a/net/minecraft/advancements/predicates/entity/EntityFlagsPredicate.java
++++ b/net/minecraft/advancements/predicates/entity/EntityFlagsPredicate.java
+@@ -73,1 +73,1 @@
+-            : !(this.isBaby.isPresent() && entity instanceof LivingEntity living) || living.isBaby() == this.isBaby.get();
++            : !(this.isBaby.isPresent() && entity instanceof LivingEntity living1) || living1.isBaby() == this.isBaby.get();

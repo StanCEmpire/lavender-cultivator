@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/frog/Tadpole.java
++++ b/net/minecraft/world/entity/animal/frog/Tadpole.java
+@@ -77,1 +77,1 @@
+-      return super.getBrain();
++      return (Brain<Tadpole>)super.getBrain();

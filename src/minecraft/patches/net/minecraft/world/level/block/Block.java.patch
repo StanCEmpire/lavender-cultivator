@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/level/block/Block.java
++++ b/net/minecraft/world/level/block/Block.java
+@@ -608,1 +608,1 @@
+-      return state.setValue(property, (Comparable)value);
++      return state.setValue(property, (T)value);

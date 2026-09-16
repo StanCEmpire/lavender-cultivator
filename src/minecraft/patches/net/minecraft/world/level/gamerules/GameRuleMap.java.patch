@@ -1,0 +1,16 @@
+--- a/net/minecraft/world/level/gamerules/GameRuleMap.java
++++ b/net/minecraft/world/level/gamerules/GameRuleMap.java
+@@ -19,2 +19,2 @@
+-   public static final Codec<GameRuleMap> CODEC = Codec.dispatchedMap(BuiltInRegistries.GAME_RULE.byNameCodec(), GameRule::valueCodec)
+-      .xmap(GameRuleMap::ofTrusted, GameRuleMap::map);
++   public static final Codec<GameRuleMap> CODEC = Codec.<GameRule<?>, Object>dispatchedMap(BuiltInRegistries.GAME_RULE.byNameCodec(), GameRule::valueCodec)
++      .xmap(GameRuleMap::ofTrusted, gameRuleMap -> (Map<GameRule<?>, Object>)gameRuleMap.map);
+@@ -24,1 +24,1 @@
+-   private final Reference2ObjectMap<GameRule<?>, Object> map;
++   private final Map<GameRule<?>, ?> map;
+@@ -58,1 +58,1 @@
+-      this.map.put(gameRule, value);
++      ((Map<GameRule<T>, T>)(Map<?, ?>)this.map).put(gameRule, value);
+@@ -102,1 +102,1 @@
+-      return this.map;
++      return (Reference2ObjectMap<GameRule<?>, Object>)this.map;

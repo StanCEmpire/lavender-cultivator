@@ -1,0 +1,8 @@
+--- a/net/minecraft/advancements/predicates/entity/PlayerPredicate.java
++++ b/net/minecraft/advancements/predicates/entity/PlayerPredicate.java
+@@ -259,1 +259,1 @@
+-                  (App<Mu<? extends PlayerPredicate.StatMatcher<?>>, Holder<T>>)type.getRegistry()
++                  type.getRegistry()
+@@ -263,1 +263,1 @@
+-                  (App<Mu<? extends PlayerPredicate.StatMatcher<?>>, MinMaxBounds.Ints>)MinMaxBounds.Ints.CODEC
++                  MinMaxBounds.Ints.CODEC

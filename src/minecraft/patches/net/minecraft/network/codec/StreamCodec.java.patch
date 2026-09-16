@@ -1,0 +1,5 @@
+--- a/net/minecraft/network/codec/StreamCodec.java
++++ b/net/minecraft/network/codec/StreamCodec.java
+@@ -623,1 +623,1 @@
+-      return this;
++      return (StreamCodec<S, V>)this;

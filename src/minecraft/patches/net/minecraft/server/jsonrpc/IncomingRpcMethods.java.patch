@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/jsonrpc/IncomingRpcMethods.java
++++ b/net/minecraft/server/jsonrpc/IncomingRpcMethods.java
+@@ -358,1 +358,1 @@
+-      IncomingRpcMethod.method(GameRulesService::update)
++      IncomingRpcMethod.<GameRulesService.GameRuleUpdate<?>, GameRulesService.GameRuleUpdate<?>>method(GameRulesService::update)

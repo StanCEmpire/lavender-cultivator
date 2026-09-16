@@ -1,0 +1,5 @@
+--- a/net/minecraft/util/HashOps.java
++++ b/net/minecraft/util/HashOps.java
+@@ -56,1 +56,1 @@
+-   private static final Comparator<Pair<HashCode, HashCode>> MAPLIKE_ENTRY_ORDER = Comparator.comparing(Pair::getFirst, HASH_COMPARATOR)
++   private static final Comparator<Pair<HashCode, HashCode>> MAPLIKE_ENTRY_ORDER = Comparator.<Pair<HashCode, HashCode>, HashCode>comparing(Pair::getFirst, HASH_COMPARATOR)

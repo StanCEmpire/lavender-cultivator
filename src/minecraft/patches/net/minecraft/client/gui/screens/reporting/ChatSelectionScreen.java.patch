@@ -1,0 +1,23 @@
+--- a/net/minecraft/client/gui/screens/reporting/ChatSelectionScreen.java
++++ b/net/minecraft/client/gui/screens/reporting/ChatSelectionScreen.java
+@@ -123,20 +123,0 @@
+-   // $VF: synthetic method
+-   static Font access$000(ChatSelectionScreen x0) {
+-      return x0.font;
+-   }
+-
+-   // $VF: synthetic method
+-   static Font access$500(ChatSelectionScreen x0) {
+-      return x0.font;
+-   }
+-
+-   // $VF: synthetic method
+-   static Font access$900(ChatSelectionScreen x0) {
+-      return x0.font;
+-   }
+-
+-   // $VF: synthetic method
+-   static Font access$1200(ChatSelectionScreen x0) {
+-      return x0.font;
+-   }
+-

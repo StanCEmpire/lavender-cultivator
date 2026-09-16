@@ -1,0 +1,5 @@
+--- a/net/minecraft/util/datafix/fixes/LeavesFix.java
++++ b/net/minecraft/util/datafix/fixes/LeavesFix.java
+@@ -348,1 +348,1 @@
+-               .set(this.paletteFinder, this.palette.stream().map(b -> Pair.of(References.BLOCK_STATE.typeName(), b)).collect(Collectors.toList()));
++               .set(this.paletteFinder, this.palette.stream().map(b -> Pair.<String, Dynamic<?>>of(References.BLOCK_STATE.typeName(), b)).collect(Collectors.toList()));

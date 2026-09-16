@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/level/storage/loot/functions/SetCustomModelDataFunction.java
++++ b/net/minecraft/world/level/storage/loot/functions/SetCustomModelDataFunction.java
+@@ -23,1 +23,1 @@
+-      NumberProviders.CODEC, ExtraCodecs.RGB_COLOR_CODEC, ConstantValue::new
++      NumberProviders.CODEC, ExtraCodecs.RGB_COLOR_CODEC, integer -> new ConstantValue(integer)

@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/entity/animal/nautilus/Nautilus.java
++++ b/net/minecraft/world/entity/animal/nautilus/Nautilus.java
+@@ -47,1 +47,1 @@
+-      return super.getBrain();
++      return (Brain<Nautilus>)super.getBrain();

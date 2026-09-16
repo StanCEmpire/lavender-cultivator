@@ -1,0 +1,5 @@
+--- a/net/minecraft/client/renderer/block/dispatch/VariantSelector.java
++++ b/net/minecraft/client/renderer/block/dispatch/VariantSelector.java
+@@ -29,1 +29,1 @@
+-               Comparable<?> value = getValueHelper((Property<Comparable<?>>)property, propertyValue);
++               Comparable<?> value = getValueHelper(property, propertyValue);

@@ -1,0 +1,5 @@
+--- a/net/minecraft/world/item/AdventureModePredicate.java
++++ b/net/minecraft/world/item/AdventureModePredicate.java
+@@ -119,1 +119,1 @@
+-         .map(block -> block.value().getName().withStyle(ChatFormatting.DARK_GRAY))
++         .map(block -> (Component)block.value().getName().withStyle(ChatFormatting.DARK_GRAY))

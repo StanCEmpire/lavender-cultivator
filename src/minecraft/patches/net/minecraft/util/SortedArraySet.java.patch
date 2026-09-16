@@ -1,0 +1,5 @@
+--- a/net/minecraft/util/SortedArraySet.java
++++ b/net/minecraft/util/SortedArraySet.java
+@@ -31,1 +31,1 @@
+-      return new SortedArraySet<>(initialCapacity, Comparator.naturalOrder());
++      return new SortedArraySet<T>(initialCapacity, Comparator.naturalOrder());

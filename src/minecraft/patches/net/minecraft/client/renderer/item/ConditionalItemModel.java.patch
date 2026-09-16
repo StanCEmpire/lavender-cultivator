@@ -1,0 +1,7 @@
+--- a/net/minecraft/client/renderer/item/ConditionalItemModel.java
++++ b/net/minecraft/client/renderer/item/ConditionalItemModel.java
+@@ -4,0 +4,1 @@
++import com.mojang.serialization.Codec;
+@@ -86,1 +87,1 @@
+-         return (T)contextSwapper.swapTo(originalProperty.type().codec(), originalProperty, context.registryAccess()).result().orElse(originalProperty);
++         return contextSwapper.swapTo((Codec<T>) originalProperty.type().codec(), originalProperty, context.registryAccess()).result().orElse(originalProperty);

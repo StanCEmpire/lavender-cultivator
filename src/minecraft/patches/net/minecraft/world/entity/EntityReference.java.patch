@@ -1,0 +1,8 @@
+--- a/net/minecraft/world/entity/EntityReference.java
++++ b/net/minecraft/world/entity/EntityReference.java
+@@ -121,1 +121,1 @@
+-      return input.read(key, codec()).orElse(null);
++      return (EntityReference<StoredEntityType>) input.read(key, codec()).orElse(null);
+@@ -130,1 +130,1 @@
+-         : input.getString(key).map(oldName -> OldUsersConverter.convertMobOwnerIfNecessary(level.getServer(), oldName)).map(EntityReference::new).orElse(null);
++         : input.getString(key).map(oldName -> OldUsersConverter.convertMobOwnerIfNecessary(level.getServer(), oldName)).map(mapper -> new EntityReference<StoredEntityType>(mapper)).orElse(null);

@@ -1,0 +1,18 @@
+--- a/net/minecraft/server/jsonrpc/api/Schema.java
++++ b/net/minecraft/server/jsonrpc/api/Schema.java
+@@ -39,1 +39,1 @@
+-   public static final Codec<? extends Schema<?>> CODEC = Codec.recursive(
++   public static final Codec<? extends Schema<?>> CODEC = Codec.<Schema<?>>recursive(
+@@ -43,2 +43,2 @@
+-                  (App<Mu<? extends Schema<?>>, Optional<URI>>)ReferenceUtil.REFERENCE_CODEC.optionalFieldOf("$ref").forGetter(Schema::reference),
+-                  (App<Mu<? extends Schema<?>>, List<String>>)ExtraCodecs.compactListCodec(Codec.STRING)
++                  ReferenceUtil.REFERENCE_CODEC.optionalFieldOf("$ref").forGetter(Schema::reference),
++                  ExtraCodecs.compactListCodec(Codec.STRING)
+@@ -47,2 +47,2 @@
+-                  (App<Mu<? extends Schema<?>>, Optional<? extends Schema<?>>>)subCodec.optionalFieldOf("items").forGetter(Schema::items),
+-                  (App<Mu<? extends Schema<?>>, Map<String, ? extends Schema<?>>>)Codec.unboundedMap(Codec.STRING, subCodec)
++                  subCodec.optionalFieldOf("items").forGetter(Schema::items),
++                  Codec.unboundedMap(Codec.STRING, subCodec)
+@@ -51,1 +51,1 @@
+-                  (App<Mu<? extends Schema<?>>, List<String>>)Codec.STRING.listOf().optionalFieldOf("enum", List.of()).forGetter(Schema::enumValues)
++                  Codec.STRING.listOf().optionalFieldOf("enum", List.of()).forGetter(Schema::enumValues)

@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/packs/metadata/MetadataSectionType.java
++++ b/net/minecraft/server/packs/metadata/MetadataSectionType.java
+@@ -13,1 +13,1 @@
+-         return type == this.type ? Optional.of(this.value) : Optional.empty();
++         return type == this.type ? Optional.of((U)this.value) : Optional.empty();

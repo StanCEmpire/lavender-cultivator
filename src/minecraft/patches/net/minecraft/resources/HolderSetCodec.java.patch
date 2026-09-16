@@ -1,0 +1,5 @@
+--- a/net/minecraft/resources/HolderSetCodec.java
++++ b/net/minecraft/resources/HolderSetCodec.java
+@@ -65,1 +65,1 @@
+-      return registry.get(key)
++      return (DataResult<HolderSet<E>>)(DataResult<?>)registry.get(key)

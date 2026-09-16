@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/dedicated/Settings.java
++++ b/net/minecraft/server/dedicated/Settings.java
+@@ -116,1 +116,1 @@
+-      return new Settings.MutableValue<>(key, result, serializer);
++      return new Settings<T>.MutableValue<>(key, result, serializer);

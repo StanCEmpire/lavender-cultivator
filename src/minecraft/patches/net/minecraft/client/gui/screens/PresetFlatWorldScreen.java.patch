@@ -1,0 +1,7 @@
+--- a/net/minecraft/client/gui/screens/PresetFlatWorldScreen.java
++++ b/net/minecraft/client/gui/screens/PresetFlatWorldScreen.java
+@@ -26,0 +26,1 @@
++import net.minecraft.network.chat.MutableComponent;
+@@ -285,1 +286,1 @@
+-               .orElse(PresetFlatWorldScreen.UNKNOWN_PRESET);
++               .orElse((MutableComponent)PresetFlatWorldScreen.UNKNOWN_PRESET);

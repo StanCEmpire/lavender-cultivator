@@ -1,0 +1,10 @@
+--- a/net/minecraft/client/multiplayer/resolver/AddressCheck.java
++++ b/net/minecraft/client/multiplayer/resolver/AddressCheck.java
+@@ -5,1 +5,1 @@
+-import com.mojang.blocklist.BlockListSupplier;
++import com.mojang.patchy.MojangBlockListSupplier;
+@@ -16,2 +16,2 @@
+-      final ImmutableList<Predicate<String>> blockLists = Streams.stream(ServiceLoader.load(BlockListSupplier.class))
+-         .map(BlockListSupplier::createBlockList)
++      final ImmutableList<Predicate<String>> blockLists = Streams.stream(ServiceLoader.load(MojangBlockListSupplier.class))
++         .map(MojangBlockListSupplier::createBlockList)

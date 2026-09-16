@@ -1,0 +1,5 @@
+--- a/net/minecraft/server/level/ChunkTaskPriorityQueue.java
++++ b/net/minecraft/server/level/ChunkTaskPriorityQueue.java
+@@ -13,1 +13,1 @@
+-      .mapToObj(priority -> new Long2ObjectLinkedOpenHashMap<>())
++      .mapToObj(priority -> new Long2ObjectLinkedOpenHashMap<List<Runnable>>())

@@ -1,0 +1,8 @@
+--- a/net/minecraft/client/gui/screens/reporting/ReportReasonSelectionScreen.java
++++ b/net/minecraft/client/gui/screens/reporting/ReportReasonSelectionScreen.java
+@@ -132,5 +132,0 @@
+-   // $VF: synthetic method
+-   static Font access$000(ReportReasonSelectionScreen x0) {
+-      return x0.font;
+-   }
+-

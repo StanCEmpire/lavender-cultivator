@@ -1,0 +1,8 @@
+--- a/net/minecraft/server/jsonrpc/methods/GameRulesService.java
++++ b/net/minecraft/server/jsonrpc/methods/GameRulesService.java
+@@ -55,1 +55,1 @@
+-                  (App<Mu<? extends GameRulesService.GameRuleUpdate<?>>, GameRuleType>)StringRepresentable.fromEnum(GameRuleType::values)
++                  StringRepresentable.fromEnum(GameRuleType::values)
+@@ -58,1 +58,1 @@
+-                  (App<Mu<? extends GameRulesService.GameRuleUpdate<?>>, T>)gameRule.valueCodec()
++                  gameRule.valueCodec()
